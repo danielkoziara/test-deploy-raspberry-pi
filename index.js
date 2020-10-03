@@ -5,7 +5,7 @@ const app = express();
 app.get("/", (req, res) => {
   const response = {
     date: new Date().toLocaleString(),
-    env: process.env.NODE_ENV,
+    test: "TEST",
   };
   console.log(response);
   return res.json(response);
