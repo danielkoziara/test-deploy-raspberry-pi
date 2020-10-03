@@ -16,7 +16,8 @@ module.exports = {
       repo: "git@github.com:danielkoziara/test-deploy-raspberry-pi.git",
       path: "/home/pi/apps/test-api",
       "pre-deploy-local": "",
-      "post-deploy": "npm install && pm2 reload ecosystem.config.js",
+      "post-deploy":
+        "/home/pi/.nvm/versions/node/v14.13.0/bin/npm install && /home/pi/.nvm/versions/node/v14.13.0/bin/pm2 reload ecosystem.config.js",
       "pre-setup": "",
     },
   },
